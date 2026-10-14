@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Pop Out</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>YouTube Pop Out</h1>
+      <p>Always-on-top player across tabs &amp; windows</p>
+    </header>
+
+    <button id="toggle" type="button">Pop Out Player</button>
+    <p id="status" class="status" hidden></p>
+
+    <label class="row">
+      <input id="autoPip" type="checkbox" />
+      <span>Auto pop out when leaving tab</span>
+    </label>
+
+    <footer>
+      Shortcut: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>
+      <span class="mac">(Mac: ⌘⇧P)</span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

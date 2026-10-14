@@ -1,0 +1,94 @@
+:root {
+  --bg: #0f0f0f;
+  --fg: #f1f1f1;
+  --muted: #aaa;
+  --accent: #ff0033;
+  --accent-hover: #e6002e;
+  --border: #303030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 260px;
+  padding: 14px;
+  font: 13px/1.4 "Segoe UI", system-ui, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+header p {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+#toggle {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+#toggle:hover {
+  background: var(--accent-hover);
+}
+
+.status {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.status.error {
+  color: #ff8a8a;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+  color: var(--fg);
+}
+
+.row input {
+  margin-top: 2px;
+}
+
+footer {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #1a1a1a;
+  font-size: 10px;
+}
+
+.mac {
+  display: block;
+  margin-top: 2px;
+}
